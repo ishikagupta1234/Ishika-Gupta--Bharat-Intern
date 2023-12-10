@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishika Gupta - Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        header {
+            background-image: url('https://www.nawpic.com/media/2020/aesthetic-desktop-nawpic-4-e1605819181323.png');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            background-color: black;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .skills {
+            background-image: url('https://wallpapercave.com/wp/wp6262695.jpg');
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        .skill {
+            display: inline-block;
+            margin: 0 20px;
+            vertical-align: top;
+        }
+
+        .skill img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .projects {
+            background-image: url('https://wallpapercave.com/wp/wp4728725.jpg');
+            padding: 80px 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .project {
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .resume{
+            background-image: url('https://wallpaperaccess.com/full/93573.jpg');
+            padding: 80px 20px;
+            text-align: center; 
+        }
+
+        .contact {
+            background-image: url('https://wallpaperaccess.com/full/1220966.jpg');
+            color: black;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact form label,
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        .contact form button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact form button:hover {
+            background-color: #e65100;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="home">
+        <h1>Ishika Gupta</h1>
+        <p>Web Developer | Designer | Innovator</p>
+    </header>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            
+            <h3>HTML</h3>
+            <p>I have great knowledge about HTML. I can easily create and design web pages and I keep myself updated with various updates in HTML.</p>
+        </div>
+        <div class="skill">
+           
+            <h3>CSS</h3>
+            <p>With the help of CSS, I can enhance the visual appearances of web pages which becomes more attractive to the user's eyes.</p>
+        </div>
+        <div class="skill">
+            
+            <h3>JavaScript</h3>
+            <P>JavaScript helps me to enable dynamic and interactive behavior in web browsers, which helps in facilitating client-side scripting for web development.</P>
+        </div>
+        <div class="skill">
+            
+            <h3>C(Programming Language)</h3>
+            <p>C helps me with a structured syntax which is needed for system programming, embedded systems, and developing diverse applications.</p>
+        </div>
+        <div class="skill">
+            
+            <h3>Project Management</h3>
+            <p>I am excellent at project management leading to successful execution of tasks and resources to acheive specific goals within defined constraints.</p>
+        </div>
+       
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p><u>HOMEPAGE OF NETFLIX:</u> <br>I have created a simple website having similar homepage that of Netflix using using HTML and CSS. I 
+                have added the shows, movies, web series admirable description, added images, videos, audios and designed a visually 
+                appealing layout. Experimented with font styles, and played with background colors.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2</h3>
+            <p><u>LANDING PAGE:</u> <br>I have created a landing page. I have learnt to create columns, divide
+                sections, arrange items, and add headers and footers. I paid special attention to alignments,
+                padding, color palette, boxes, and other elements. A landing page project allowed me to apply HTML and CSS skills, 
+                while ensuring a visually appealing and user-friendly design.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 3</h3>
+            <p><u>CALCULATOR:</u> <br>I have created a basic calculator using CSS, and HTML, I have implemented an
+                interactive interface with buttons for addition, subtraction, multiplication, and division
+                operations. The calculator have a display screen to show user input and results. Utilized
+                CSS grid system for button alignments.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <section class="resume" id="resume">
+        <div class="resume">
+        <h2>Resume</h2>
+        <p>Download my resume to learn more about my experience and skills.</p>
+        <a href="C:\Users\Ishika\Downloads\ISHIKA GUPTA RESUME.docx" target="_blank">
+            <button>Download Resume</button>
+        </a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ishika Gupta. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

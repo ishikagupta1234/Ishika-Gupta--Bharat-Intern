@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlickFiesta</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+        }
+        nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+       
+        }
+        nav a {
+            text-decoration: none;
+            padding: 30px 50px;
+            color: white;
+        }
+        nav a:hover{
+        background-color: red;
+        }
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{
+        display: block;
+        }       
+        .dropdown-content a{
+        color: black;
+        padding: 12px, 16px;
+        text-decoration: none;
+        display: block;      
+        }
+        .dropdown-content a:hover{
+            background-color: antiquewhite;
+        }
+        header {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .jumbotron {
+            background: url('http://4.bp.blogspot.com/-Tz2h4J4VdPw/UvezidpNOeI/AAAAAAAAJck/oHfz4EHTg7o/s1600/2013_movies_wallpaper_by_z_designs-d5u94o3.jpg') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .jumbotron h1 {
+            font-size: 3em;
+        }
+
+        .content{
+            width: 100%;
+            margin: 0 auto;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #333;
+            background-color: black;
+        }
+        
+        .content2{
+            border: 2px solid #333;
+            background-color: black;
+        }
+        h1, p{
+            color: white;
+        }
+        .button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .movies-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .movie-card {
+            width: 200px;
+            margin: 20px 0;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+        .movie-description{
+            font-style: italic;
+            font-size: medium;
+            width: 200px;
+            height: auto ;
+            padding:  100px 0px;
+        }
+        .pricing-plans {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        .price-plan {
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .price-plan h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .price-plan p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .price-plan .price {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .price-plan button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .price-plan button:hover {
+            background-color: #e65100;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+            position: static;
+            bottom: 0;
+            width: 100%;
+            z-index: 0;
+            margin-top: -30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FlickFiesta</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#TV SERIES">TV SERIES</a></li>
+            <li><a href="#MOVIES">MOVIES</a></li>
+            <li><a href="#WEB SERIES">WEB SERIES</a></li>
+            <li class="dropdown">
+                <a href="#GENRES">
+                    GENRES
+                </a>
+                <div class="dropdown-content">
+                    <a href="">
+                    ACTION
+                    </a>
+                    <a href="" >
+                     COMEDY   
+                    </a>
+                    <a href="">
+                    HORROR
+                    </a>
+                    <a href="">
+                    FANTASY
+                    </a>
+                    <a href="">
+                    THRILLER
+                    </a>
+                </div>
+            </li>
+            
+        </ul>
+    </nav>
+    <div class="main-container">
+        <div class="jumbotron">
+            <h1>Watch Anytime, Anywhere.</h1>
+        </div>
+    </div>
+        <section>
+            <div class="content2">
+                <h1 >Watch Unlimited Movies & TV Shows</h1>
+                <div>
+                <p>Stream on your favorite devices. <br>Cancel anytime.</p>
+                </div>
+                <button>Start Your Free Trial</button>
+               
+            </div>
+            </section>
+       
+
+        <div class="movies-container">
+            <div class="movie-card">
+                <img src="https://picfiles.alphacoders.com/368/368054.jpg" alt="Movie 1">  
+            </div>
+            <div class="movie-description">
+                <p >CINDERALLA<br>2015.Fantasy/Romance.1h 45min</p>
+            </div>
+            <div class="movie-card">
+                <img src="http://3.bp.blogspot.com/-H57vRpipBhs/T92h_GLMFAI/AAAAAAAAAAc/zLYxoSfXv9w/s1600/avatar_movie_poster_final_01.jpg" alt="Movie 2">
+            </div>
+            <div class="movie-description">
+                <p>AVATAR<br>2009.Sci-fi/Action.2h 58min</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/originals/86/2d/8e/862d8e2c5d7700db923ec5f51e77e088.png" alt="Movie 3">
+            </div>
+            <div class="movie-description">
+                <p>ONCE UPON A TIME IN HOLLYWOOD<br>2019.Comedy/Western film.2h 40min</p>
+            </div>
+        </div>
+        <div class="movies-container">
+            <div class="movie-card">
+                <img src="https://i.pinimg.com/736x/8e/09/da/8e09da7bf54ac32aecbf259b900869e0.jpg" alt="Movie 4">
+            </div>
+            <div class="movie-description">
+                <p>TITANIC<br>1997.Romance/Adventure.3h 14min</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://dam.smashmexico.com.mx/wp-content/uploads/2019/12/Poster2.jpg" alt="Movie 5">
+            </div>
+            <div class="movie-description">
+                <p>JUSTICE LEAGUE<br>2017.Action/Adventure.2h</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://s3.crackedcdn.com/phpimages/photoshop/7/7/0/606770_v2.jpg?v=2" alt="Movie 6">
+            </div>
+            <div class="movie-description">
+                <p>MAD MAX<br>2015.Action/Adventure.2h</p>
+            </div>
+        </div>
+        <div class="movies-container">
+                <div class="movie-card">
+                    <img src="https://screench.com/upload/uTVGku4LibMGyKgQvjBtv3OYfAX.jpeg" alt="Movie 7">
+                </div>
+                <div class="movie-description">
+                    <p>MARY POPPINS RETURNS<br>2018.Fantasy/Musical.2h 10min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://4.bp.blogspot.com/-mHWFqwqIdXU/U6vFeKWS2rI/AAAAAAAABDM/OyXlgdBAVfI/s1600/2014+hollywood+movies+poster.jpg" alt="Movie 8">
+                </div>
+                <div class="movie-description">
+                    <p>DIVERGENT<br>2014.Action/Sci-fi.2h 19min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://1.bp.blogspot.com/-rywL1hPYVLQ/WndW6xHIBRI/AAAAAAABgWo/R86OxSh0naMGsjpkiYLV94EpScuDP9byQCLcBGAs/s1600/DVDE7fbVAAACjS8.jpg" alt="Movie 9">
+                </div>
+                <div class="movie-description">
+                    <p>SKYSCRAPPER<br>2018.Action/Thriller.1h 42min</p>
+                </div>
+        </div>
+        <div class="movies-container">
+                <div class="movie-card">
+                        <img src="https://screench.com/upload/Yi00NzJjLTkwOTgtOTU2NWM1ZjJmYWVhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Movie 10">
+                </div>
+                <div class="movie-description">
+                    <p>MALEFICIENT<br>2019.Fantasy/Adventure.1h 58min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://wallpapercave.com/wp/wp1934793.jpg" alt="Movie 11">
+                </div>
+                <div class="movie-description">
+                    <p>OBLIVION<br>2013.Sci-fi/Action.2h 4min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="http://graphicdesignjunction.com/wp-content/uploads/2012/05/large/movie-poster-20.jpg" alt="Movie 12">
+                </div>
+                <div class="movie-description">
+                    <p>BATTLESHIP<br>2012.Action/Sci-fi.2h 11min</p>
+                </div> 
+        </div>
+        <div class="movies-container">
+                <div class="movie-card">
+                        <img src="https://image.tmdb.org/t/p/original/wZGlaMxBAjCIYLzyDWvocaoNooZ.jpg" alt="Movie 13">
+                </div>
+                <div class="movie-description">
+                    <p>SPIDERMAN<br>2002.Action.2h 1min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://images.hdqwalls.com/download/black-adam-2021-rock-os-1280x2120.jpg" alt="Movie 14">
+                </div>
+                <div class="movie-description">
+                    <p>BLACK ADAM<br>2022.Action/Adventure.2h 5min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://movies.universalpictures.com/media/opr-tsr1sheet3-look2-rgb-3-1-1-64545c0d15f1e-1.jpg" alt="Movie 15">
+                </div>
+                <div class="movie-description">
+                    <p>OPPENHEIMER<br>2023.Thriller.3h</p>
+                </div>
+        </div>
+        <div class="movies-container">
+                <div class="movie-card">
+                        <img src="https://image.tmdb.org/t/p/w500/mYAv0YUoXJzLxIdEirOken8Quwf.jpg" alt="Movie 16">
+                </div>
+                <div class="movie-description">
+                    <p>THE ROYAL TREATMENT<br>2022.Romance/Comedy.1h 37min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://xinemas.com/data/upload/movies/2023/barbie.jpg" alt="Movie 17">
+                </div>
+                <div class="movie-description">
+                    <p>BARBIE<br>2023.Comedy/Fantasy.1h 54min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://i.pinimg.com/originals/9c/7a/98/9c7a9817f94540479a2943aa334aa407.jpg" alt="Movie 18">
+                </div>
+                <div class="movie-description">
+                    <p>HOBBS AND SHAW<br>2019.Action/Adventure.2h 18min</p>
+                </div>
+        </div>
+        <div class="movies-container">
+                <div class="movie-card">
+                        <img src="https://screench.com/upload/k37bYqOUWMqhrfzmR8Mk9sy2jxH.jpeg" alt="Movie 19">
+                </div> 
+                <div class="movie-description">
+                    <p>INTO THE WOODS<br>2014.Musical/Fantasy.2h 5min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="http://cdn.collider.com/wp-content/uploads/2019/02/hellboy-reboot-poster.jpg" alt="Movie 20">
+                </div>
+                <div class="movie-description">
+                    <p>HELLBOY<br>2019.Action/Fantasy.2h 1min</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://64.media.tumblr.com/e06865431d8db7d12a2f78b618369634/tumblr_ovisd5ozOc1u4whbwo1_1280.jpg" alt="Movie 21">
+                </div>
+                <div class="movie-description">
+                    <p>SLEEPING BEAUTY<br>2017.Musical/Fantasy.1h 15min</p>
+                </div>
+        </div>
+    </div> 
+    <div class="container">
+        <h1>Subscription Plans</h1>
+
+        <div class="pricing-plans">
+            <div class="price-plan">
+                <h2>Basic Plan</h2>
+                <p>Stream on 1 device</p>
+                <p>Standard Definition (SD)</p>
+                <p>Access to basic content</p>
+                <p class="price">$9.99/month</p>
+                <button>Select Plan</button>
+            </div>
+
+            <div class="price-plan">
+                <h2>Standard Plan</h2>
+                <p>Stream on 2 devices</p>
+                <p>High Definition (HD)</p>
+                <p>Access to a wide range of content</p>
+                <p class="price">$13.99/month</p>
+                <button>Select Plan</button>
+            </div>
+
+            <div class="price-plan">
+                <h2>Premium Plan</h2>
+                <p>Stream on 4 devices</p>
+                <p>Ultra High Definition (UHD)</p>
+                <p>Access to premium content</p>
+                <p class="price">$16.99/month</p>
+                <button>Select Plan</button>
+            </div>
+        </div>
+    </div>                      
+        
+    <footer>
+        <p> &copy; 2023 FlickFiesta. All rights reserved. </p>
+     </footer>
+</body>
+</html>
